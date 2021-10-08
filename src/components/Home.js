@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div
       className={
-        "home-header flex justify-center items-center text-white text-4xl"
+        "home-header flex justify-center items-center text-white text-2xl"
       }
     >
       <Link to={"/"}>
