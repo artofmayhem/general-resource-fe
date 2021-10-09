@@ -54,7 +54,7 @@ export default function Nav() {
         position="static"
         style={{
           height: "auto",
-          backgroundColor: "#FAFAFA",
+          backgroundColor: "transparent",
           width: "100vw",
           boxShadow: "0 0 1rem white",
         }}

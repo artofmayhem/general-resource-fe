@@ -15,7 +15,7 @@ function App() {
             loop={true}
             height={'100%'}
             width={'100%'}
-            style={{margin: 'auto auto', }}
+            style={{margin: 'auto auto'}}
             id={'video-player'}
             playsinline={true}
         />
