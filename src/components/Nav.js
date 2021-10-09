@@ -50,29 +50,28 @@ export default function Nav() {
   return (
     <>
       <AppBar
-        color="primary"
-        position="static"
+        color="transparent"
+        position="absolute"
         style={{
           height: "auto",
           backgroundColor: "transparent",
           width: "100vw",
-          boxShadow: "0 0 1rem white",
         }}
         ref={(el) => (nav = el)}
       >
         <div className={"flex flex-row flex-wrap justify-between align-center"}>
-          <div className={"flex flex-row my-6 ml-6 text-black text-4xl w-auto"}>
+          <div className={"flex flex-row my-6 ml-6 bg-transparent text-black text-4xl w-auto"}>
             <Button onClick={handleDrawerOpen}>
-              <MenuIcon className={" mx-6"} />
+              <MenuIcon className={"text-white mx-6"} />
             </Button>
             <Link to="/">
-              <h1 className={"ml-0"}>General Resource</h1>
+              <h1 className={"ml-0 text-white"}>General Resource</h1>
             </Link>
           </div>
-          <div className={"my-6 -mr-24 text-black text-4xl w-96"}>
+          <div className={"my-6 -mr-24 text-white text-4xl w-96"}>
             <Button>
               <Link
-                className={"text-black"}
+                className={"text-white"}
                 style={{ fontSize: "10px" }}
                 to={"login"}
               >
@@ -84,7 +83,7 @@ export default function Nav() {
         </div>
       </AppBar>
       <Drawer
-        color="primary"
+        color="transparent"
         open={state.left}
         onClose={handleDrawerClose}
         classes={{
@@ -92,6 +91,14 @@ export default function Nav() {
         }}
       >
         <List className={classes.list}>
+        <ListItem button>
+            <ListItemIcon>
+              <EmojiPeopleIcon />
+            </ListItemIcon>
+            <Link to={"home"} onClick={handleDrawerClose}>
+              <ListItemText primary="Home" />
+            </Link>
+          </ListItem>
           <ListItem button>
             <ListItemIcon>
               <EmojiPeopleIcon />

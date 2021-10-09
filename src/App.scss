@@ -6,17 +6,28 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1 {
+  font-family: "Knockout 90 A", "Knockout 90 B";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-family: "Isotope A", "Isotope B";
   font-style: normal;
   font-weight: 300;
 }
 
 .home-header {
-  background-image: url('./assets/landingHeader.jpg');
+  background-image: url("./assets/landingHeader.jpg");
   background-size: cover;
   background-position: center -40vh;
   height: 90vh;
-  width: 100vw
+  width: 100vw;
 }
-
