@@ -31,11 +31,11 @@ export default function Nav() {
     timeline
       .from(nav, 1.75, {
         opacity: 0,
-        backgroundColor: "white",
+        backgroundColor: "transparent",
       })
       .to(nav, 1.75, {
         opacity: 1,
-        backgroundColor: "transparent",
+        backgroundColor: "white",
       });
   }, []); // eslint-disable-line
 
@@ -50,11 +50,10 @@ export default function Nav() {
   return (
     <>
       <AppBar
-        color="transparent"
         position="absolute"
         style={{
           height: "auto",
-          backgroundColor: "transparent",
+          backgroundColor: "white",
           width: "100vw",
         }}
         ref={(el) => (nav = el)}
@@ -62,10 +61,10 @@ export default function Nav() {
         <div className={"flex flex-row flex-wrap justify-between align-center"}>
           <div className={"flex flex-row my-6 ml-6 bg-transparent text-black text-4xl w-auto"}>
             <Button onClick={handleDrawerOpen}>
-              <MenuIcon className={"text-white mx-6"} />
+              <MenuIcon className={"text-black mx-6"} />
             </Button>
             <Link to="/">
-              <h1 className={"ml-0 text-white"}>General Resource</h1>
+              <h1 className={"ml-0 text-yellow-500"}>General Resource</h1>
             </Link>
           </div>
           <div className={"my-6 -mr-24 text-white text-4xl w-96"}>
