@@ -110,7 +110,7 @@ export default function Nav() {
             <ListItemIcon>
               <EmojiPeopleIcon />
             </ListItemIcon>
-            <Link to={"chef"} onClick={handleDrawerClose}>
+            <Link to={"technology"} onClick={handleDrawerClose}>
               <ListItemText primary="Our Technology" />
             </Link>
           </ListItem>
