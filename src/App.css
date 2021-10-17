@@ -1,5 +1,12 @@
 body {
+  margin: 0;
+  height: 100vh;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .App {
@@ -13,17 +20,6 @@ h1 {
   letter-spacing: 3px;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-family: "Isotope A", "Isotope B";
-  font-style: normal;
-  font-weight: 300;
-}
-
 .home-header {
   background-image: url("./assets/landingHeader.jpg");
   background-size: cover;
@@ -31,3 +27,11 @@ p {
   height: 90vh;
   width: 100vw;
 }
+
+.content {
+  padding: 25vh 0;
+  width: 100vw;
+  opacity: 0.9999999;
+  text-align: center;
+}
+/*# sourceMappingURL=App.css.map */

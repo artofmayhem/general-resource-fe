@@ -1,5 +1,10 @@
 body {
+  margin: 0;
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .App {
@@ -13,16 +18,16 @@ h1 {
   letter-spacing: 3px;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-family: "Isotope A", "Isotope B";
-  font-style: normal;
-  font-weight: 300;
-}
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p {
+//   font-family: "Isotope A", "Isotope B";
+//   font-style: normal;
+//   font-weight: 300;
+// }
 
 .home-header {
   background-image: url("./assets/landingHeader.jpg");
@@ -31,3 +36,48 @@ p {
   height: 90vh;
   width: 100vw;
 }
+//
+//.parallax-wrapper {
+//  width: 100vw;
+//  height: 100vh;
+//  margin-top: 100vh;
+//  padding-top: 20vh;
+//  box-sizing: border-box;
+//  transform-style: preserve-3d;
+//}
+//
+//.parallax-wrapper::before {
+//  content: '';
+//  width: 100vw;
+//  height: 100vh;
+//  top: 0;
+//  left: 0;
+//  opacity: 0.6;
+//  background-image: url("./assets/landingHeader.jpg");
+//  background-size: cover;
+//  background-position: center center;
+//  position: absolute;
+//  z-index: -1;
+//  transform:translateZ(-1px) scale(2)
+//}
+//
+//.regular-wrapper {
+//  width: 100vw;
+//  height: 100vh;
+//  padding-top: 20vh;
+//  background-color: indigo;
+//  background-image: url("./assets/landingHeader.jpg");
+//  background-size: cover;
+//  background-position: center center;
+//  z-index: 2;
+//  position: relative;
+//}
+//
+
+.content {
+  padding: 25vh 0;
+  width: 100vw;
+  opacity: 0.9999999;
+  text-align: center;
+}
+
