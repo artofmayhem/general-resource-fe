@@ -31,11 +31,11 @@ export default function Nav() {
     timeline
       .from(nav, 1.75, {
         opacity: 0,
-        backgroundColor: "transparent",
+        // backgroundColor: "transparent",
       })
       .to(nav, 1.75, {
         opacity: 1,
-        backgroundColor: "white",
+        // backgroundColor: "white",
       });
   }, []); // eslint-disable-line
 
@@ -59,7 +59,7 @@ export default function Nav() {
         ref={(el) => (nav = el)}
       >
         <div className={"flex flex-row flex-wrap justify-between align-center"}>
-          <div className={"flex flex-row my-6 ml-6 bg-transparent text-black text-4xl w-auto"}>
+          <div className={"flex flex-row my-6 ml-6 py-6 text-black text-5xl w-auto"}>
             <Button onClick={handleDrawerOpen}>
               <MenuIcon className={"text-black mx-6"} />
             </Button>
