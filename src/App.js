@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.scss";
 import { Nav, Home, AboutUs, Technology } from "./components";
-import { HeaderVideo, Sunrise, IslandRoad } from "./assets/index";
+import { GeneralHeader, Sunrise, IslandRoad } from "./assets/index";
 import ReactPlayer from "react-player/lazy";
 
 function App() {
@@ -11,33 +11,35 @@ function App() {
         <Nav />
         <div
           className={
-            "flex justify-center flex-col items-end text-white text-2xl bg-black py-20 px-48 w-screen h-screen"
+            "flex justify-center flex-col items-end text-white text-2xl  py-20 w-screen h-screen"
           }
           style={{
             position: "absolute",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            opacity: "0.7",
+            // opacity: "0.5",
           }}
         >
-          <h1
-            className={"animate-pulse animate-fade-in-up text-7xl text-white"}
-            style={{ textShadow: "0px 0px 1.5rem black" }}
-          >
-            General Resource
-          </h1>
-          <h1
-            className={
-              "animate-pulse animate-fade-in-up mt-6 text-3xl text-white"
-            }
-            style={{ textShadow: "0px 0px 1.5rem black" }}
-          >
-            Re-imagining the future of energy
-          </h1>
+          <div className={'flex flex-col items-end justify-center pr-24 border-2 border-white py-10 bg-yellow-500'} style={{ width: '45rem', boxShadow: '0 0 3rem black'}}>
+            <h1
+              className={"animate-fade-in-up text-7xl text-white"}
+              style={{ textShadow: "0px 0px 1.5rem black" }}
+            >
+              General Resource
+            </h1>{" "}
+            <h1
+              className={
+                "animate-fade-in-up mt-6 text-3xl text-white"
+              }
+              style={{ textShadow: "0px 0px 1.5rem black" }}
+            >
+              Re-imagining the future of energy
+            </h1>
+          </div>
         </div>
         <ReactPlayer
-          url={HeaderVideo}
+          url={GeneralHeader}
           playing={true}
           loop={true}
           width={"100%"}
@@ -45,7 +47,6 @@ function App() {
           id={"video-player"}
           playsinline={true}
           forceVideo
-          style={{ zIndex: -1 }}
           controls
         />
         <div className={"h-screen bg-white -mt-72"}>
@@ -73,12 +74,13 @@ function App() {
                 </h1>
               </Link>
             </div>
-
-            <img
-              src={Sunrise}
-              className={"w-1/2"}
-              alt={"a young man watching a sunrise"}
-            />
+            <div className={"flex justify-center items-center w-1/2"}>
+              <img
+                src={Sunrise}
+                style={{ width: "90%" }}
+                alt={"a young man watching a sunrise"}
+              />
+            </div>
           </div>
         </div>
         <div
@@ -86,7 +88,11 @@ function App() {
             "w-screen h-72 mt-32 flex justify-center items-center text-center"
           }
         >
-          <h2 className={"text-black text-3xl w-1/2"}>
+          <h2
+            className={
+              "text-white text-4xl w-1/2 bg-yellow-500 w-screen py-48 px-80"
+            }
+          >
             Installed completely underground, these mega energy generators
             harness the natural energies that power the Earth to produce a
             clean, limitless supply of energy.
@@ -96,21 +102,27 @@ function App() {
           <div
             className={"content bg-white flex flex-row flex-wrap items-center "}
           >
-             <img
-              src={IslandRoad}
-              className={"w-1/2"}
-              alt={"a winding island road with our SEGs safely tucked underneath"}
-            />
+            <div className={"flex justify-center items-center w-1/2"}>
+              S
+              <img
+                src={IslandRoad}
+                style={{ width: "90%" }}
+                alt={
+                  "a winding island road with our SEGs safely tucked underneath"
+                }
+              />
+            </div>
+
             <div className={"w-1/2 flex flex-col px-48  justify-center"}>
               <h1 className={"text-yellow-500 text-6xl m-auto text-right"}>
                 Energy Generation Meets Land Management
               </h1>
               <p className={"text-right text-xl mt-4"}>
-                Safely tucked underneath the highway, these mega energy generators do not require any additional footprint to provide clean energy at a fraction of the cost of current energy models.
+                Safely tucked underneath the highway, these mega energy
+                generators do not require any additional footprint to provide
+                clean energy at a fraction of the cost of current energy models.
               </p>
-             
             </div>
-           
           </div>
         </div>
       </div>

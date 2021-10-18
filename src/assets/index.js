@@ -1,9 +1,9 @@
-import HeaderVideo from './headerVideo.mp4';
 import Sunrise from './sunrise.jpg';
 import IslandRoad from './islandRoad.jpg';
+import GeneralHeader from './gr_header.mov';
 
 export {
-    HeaderVideo,
     Sunrise,
-    IslandRoad
+    IslandRoad,
+    GeneralHeader
 }
